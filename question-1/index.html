@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Lempar Dadu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Game Lempar Dadu</h1>
+      <div class="container">
+        <div class="form">
+          <label for="playerCount">Jumlah Pemain</label>
+          <input type="number" id="playerCount" />
+        </div>
+        <div class="form">
+          <label for="diceCount">Jumlah Dadu</label>
+          <input type="number" id="diceCount" />
+        </div>
+        <button onclick="startGame()">Mulai Bermain</button>
+      </div>
+
+      <div class="game">
+        <div id="game-winner">
+          <h2>Pemenang :</h2>
+          <p id="winner-result"></p>
+        </div>
+        <div id="game-result"><h2>Hasil Permainan :</h2></div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
